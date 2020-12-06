@@ -1,0 +1,164 @@
+.container {
+    grid-template-columns: 155px repeat(2, 1fr);
+    grid-template-rows: 95px 1fr 95px;
+    height: 100%;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-areas:
+        "head head head"
+        "menu cont cont"
+        "foot foot foot";
+}
+
+.header {
+    background-color: #56aedd;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.25em;
+    text-align: center;
+    grid-area: head;
+}
+
+.footer {
+    background-color: #7EA8BE;
+    text-align: center;
+    grid-area: foot;
+    line-height: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* .menu {
+    background-color: #271b5c;
+    grid-area: menu;
+} */
+
+#notesSidebarContainer {
+    background-color: #271b5c;
+    grid-area: menu;
+}
+
+h2 {
+    color: rgb(247, 244, 244);
+}
+
+li{
+    color: rgb(248, 246, 246);
+}
+
+textarea {
+    resize: none;
+    width: 85%;
+    height: 85%;
+    font-size: 1.8rem;
+    letter-spacing: 1.8px;
+    border-radius: 8px;
+    border: 1.20px solid rgb(248, 243, 243);
+}
+
+/* .content {
+    background-color: #baeef7;
+    padding: 8px;
+    grid-area: cont;
+} */
+
+#textAreaContainer {
+    background-color: #baeef7;
+    padding: 8px;
+    grid-area: cont;
+}
+
+.button{
+    border: none;
+    color: white;
+    padding: 3px 6px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: 3px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+}
+
+.Hidden{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+/* .buttonone{
+    background-color: #3b967f;
+}
+
+.buttontwo{
+    background-color:#cf5b5b;
+}
+
+.buttonthree{
+    background-color: #370df0;
+}
+
+.buttonfour{
+    background-color:#d44286;
+} */
+
+#newNoteBtn {
+    background-color:#3b967f;
+}
+
+#themeBtn{
+    background-color:#cf5b5b;
+}
+
+#saveBtn{
+    background-color: #370df0;
+}
+
+#cancelBtn{
+    background-color:#d44286;
+}
+
+.bottombutton{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 6px;
+    border: 3px;
+}
+
+.image{
+    width: 35px;
+    height: 35px;
+}
+
+html, body {
+    height:100%
+}
+
+@media screen and (max-width:750px) {
+    .container {
+        display: grid;
+        grid-gap: 8px;
+        height: 100%;
+        font-size: 80%;
+        grid-template-columns: 90px repeat(2, 1fr);
+        grid-template-rows: 50px 50px 1fr 80px;
+        grid-template: minmax(90px, auto);
+        grid-template-areas:
+            "head head head"
+            "menu menu menu"
+            "cont cont cont"
+            "foot foot foot";
+    }
+    .header>p {
+        display: inline;
+    }
+
+    .side>li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .menu {
+        line-height: 0.4em;
+    }
+}

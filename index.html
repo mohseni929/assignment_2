@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <script src = "app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Take Better Notes</p>
+        </div>
+        <div id="notesSidebarContainer" class="menu">
+            <h2>My Notes</h2>
+            <ul id="noteTitles" class = "side">
+                <li>note one</li>
+                <li>note two</li>
+            </ul>
+        </div>
+        <div id="textAreaContainer" class="content">
+            <button id="newNoteBtn" class = "button buttonone" onclick="setActive()">New Note</button>
+            <button id="themeBtn" class = "button buttontwo" onclick="toggleTheme()">Dark Theme</button></br>
+            <textarea id="textArea" placeholder="This is a placeholder"></textarea></br>
+            <div class = "bottombutton">
+                <button id="saveBtn" class = "button buttonthree" onclick="saveNewNote()">save</button>
+                <button id="cancelBtn" class = "button buttonfour" onclick="hideTextArea()">cancel</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>
+                KEEP IN TOUCH </br>
+                <img src="./instagram.png" alt = "Instagram" class="image" />
+                <img src="./linkedin1.png" alt = "linkedin" class="image" />
+            </p>
+        </div>
+    </div>
+</body>
+</html>
